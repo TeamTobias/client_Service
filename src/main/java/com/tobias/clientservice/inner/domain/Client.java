@@ -25,4 +25,15 @@ public class Client {
     private Gender gender;
     private Date birth;
     private String phone;
+
+    public static Client createClient(RequestClient requestClient){
+        Client client = new Client();
+        client.setName(requestClient.getName());
+        client.setNickname(requestClient.getNickname());
+        client.setEmail(requestClient.getEmail());
+        client.setGender(requestClient.getGender());
+        client.setBirth(requestClient.getBirth());
+        client.setPhone(requestClient.getPhone());
+        return client;
+    }
 }
