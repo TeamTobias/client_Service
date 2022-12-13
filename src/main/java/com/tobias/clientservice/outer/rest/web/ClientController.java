@@ -15,6 +15,7 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 public class ClientController {
 
